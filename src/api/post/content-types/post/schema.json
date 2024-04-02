@@ -21,10 +21,6 @@
       "required": true,
       "unique": true
     },
-    "content": {
-      "type": "blocks",
-      "required": true
-    },
     "categories": {
       "type": "relation",
       "relation": "oneToMany",
@@ -34,6 +30,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "content": {
+      "type": "string"
     }
   }
 }

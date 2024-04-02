@@ -439,7 +439,6 @@ export interface ApiPostPost extends Schema.CollectionType {
   attributes: {
     title: Attribute.String & Attribute.Required;
     slug: Attribute.String & Attribute.Required & Attribute.Unique;
-    content: Attribute.Blocks & Attribute.Required;
     categories: Attribute.Relation<
       'api::post.post',
       'oneToMany',
@@ -450,6 +449,7 @@ export interface ApiPostPost extends Schema.CollectionType {
       'oneToOne',
       'plugin::users-permissions.user'
     >;
+    content: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
