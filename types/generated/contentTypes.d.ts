@@ -404,9 +404,9 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.String & Attribute.Required;
-    slug: Attribute.String & Attribute.Required;
-    short_name: Attribute.String & Attribute.Required;
+    _domain: Attribute.String & Attribute.Required;
+    _nicename: Attribute.String & Attribute.Required;
+    __cdata: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

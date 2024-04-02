@@ -12,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "_domain": {
       "type": "string",
       "required": true
     },
-    "slug": {
+    "_nicename": {
       "type": "string",
       "required": true
     },
-    "short_name": {
+    "__cdata": {
       "type": "string",
       "required": true
     }
